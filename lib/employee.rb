@@ -6,6 +6,6 @@ class Employee < ActiveRecord::Base
     validates :hourly_rate,
       presence: true,
       numericality: { greater_than_or_equal_to: 40, less_than_or_equal_to: 200}
-    validates :store_id
+    validates :store_id, presence: true
   
 end
